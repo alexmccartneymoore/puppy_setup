@@ -1,11 +1,25 @@
 #!/bin/bash
 
-# get the config files using curl
-# curl -O address_of_configs
+# refresh the apt lists
+rm -vf /var/lib/apt/lists/*
+
+# update the repos
+apt update
+
+# install git
+apt install git -y
+
+# clone the repo
+git clone https://github.com/alexmccartneymoore/puppy_setup.git
+
+cd puppy_setup
 
 # cp or move the config files 
-# mv ./.jwmrc-theme ~/.jwm/.jwmrc-theme
-# mv ./.jwmrc-tray ~/.jwmrc-tray
+cp jwmrc-theme ~/.jwm/jwmrc-theme
+cp .jwmrc-tray ~/.jwmrc-tray
+
+# remove conky
+apt remove conky -y
 
 # restart jwm
 jwm -restart
