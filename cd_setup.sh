@@ -18,6 +18,13 @@ cd puppy_setup
 cp jwmrc-theme ~/.jwm/jwmrc-theme
 cp .jwmrc-tray ~/.jwmrc-tray
 
+# either download image to use 
+# or change the background for ROX
+sed -i -e 's/\/.*.jpg/\/Blue.jpg/' /root/Choices/ROX-Filer/PuppyPin
+
+# reload rox
+rox -p /root/Choices/ROX-Filer/PuppyPin
+
 # remove conky
 apt remove conky -y
 
