@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <pinboard>
   <backdrop style="Stretched">/usr/share/backgrounds/Black.jpg</backdrop>               
-  <icon x="32" y="128" label="File">/usr/local/bin/defaultfilemanager</icon>             
-  <icon x="32" y="224" label="Term">/usr/local/bin/defaultterminal</icon>               
-  <icon x="32" y="320" label="Browse">/usr/local/bin/defaultbrowser</icon>              
-  <icon x="32" y="416" label="Trash">/usr/local/apps/Trash</icon>                       
+  <icon x="32" y="108" label="File">/usr/local/bin/defaultfilemanager</icon>             
+  <icon x="32" y="204" label="Term">/usr/local/bin/defaultterminal</icon>               
+  <icon x="32" y="300" label="Browse">/usr/local/bin/defaultbrowser</icon>              
+  <icon x="32" y="396" label="Trash">/usr/local/apps/Trash</icon>                       
   <icon x="32" y="2080" label="mm1p1" args="card vfat">/tmp/pup_event_frontend/drive_mmcblk1p1</icon>
   <icon x="128" y="2080" label="mm1p1" args="card vfat">/tmp/pup_event_frontend/drive_mmcblk1p2</icon>
 </pinboard> 
