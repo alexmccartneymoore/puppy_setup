@@ -20,7 +20,8 @@ cp .jwmrc-tray ~/.jwmrc-tray
 
 # either download image to use 
 # or change the background for ROX
-sed -i -e 's/\/.*.jpg/\/Blue.jpg/' /root/Choices/ROX-Filer/PuppyPin
+#sed -i -e 's/\/.*.jpg/\/Blue.jpg/' /root/Choices/ROX-Filer/PuppyPin
+cp PuppyPin ~/Choices/ROX-Filer/PuppyPin
 
 # reload rox
 rox -p /root/Choices/ROX-Filer/PuppyPin
