@@ -5,6 +5,6 @@
   <icon x="32" y="224" label="Term">/usr/local/bin/defaultterminal</icon>               
   <icon x="32" y="320" label="Browse">/usr/local/bin/defaultbrowser</icon>              
   <icon x="32" y="416" label="Trash">/usr/local/apps/Trash</icon>                       
-  <icon x="32" y="2080" label="mm1p1" args="card vfat">/tmp/pup_event_frontend/drive_mmc
-  <icon x="128" y="2080" label="mm1p2" args="card ext4">/tmp/pup_event_frontend/drive_mm
+  <icon x="32" y="2080" label="mm1p1" args="card vfat">/tmp/pup_event_frontend/drive_mmcblk1p1</icon>
+  <icon x="128" y="2080" label="mm1p1" args="card vfat">/tmp/pup_event_frontend/drive_mmcblk1p2</icon>
 </pinboard> 
