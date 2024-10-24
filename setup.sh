@@ -2,6 +2,12 @@
 
 # This script is run from the flash memory puppy
 
+# set the system clock
+ntpdate ntp.ubuntu.com
+
+# set the hardware clock
+hwclock --systohc
+
 # refresh the apt lists
 rm -vf /var/lib/apt/lists/*
 
@@ -33,12 +39,16 @@ cp /mnt/second_p/puppy_setup/PuppyPin ~/Choices/ROX-Filer/PuppyPin
 
 # reload rox
 rox -p /root/Choices/ROX-Filer/PuppyPin
+roxfiler -p /root/Choices/ROX-Filer/PuppyPin
 
 # restart jwm
 jwm -restart
 
 # remove conky
 apt remove conky -y
+
+# remove the startup script that resets the background and conky
+rm /root/Startup/conkystart
 
 # unmount the drive
 umount /mnt/second_p
@@ -52,7 +62,7 @@ sh /usr/sbin/savesession-archive
 # lshw for hardware details
 
 # Show disk size
-fdisk -l /dev/mmcblk*
+fdisk -l /dev/mmcblk1
 read -p "Press enter to continue"
 
 # Show disk space on sector

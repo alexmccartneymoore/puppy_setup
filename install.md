@@ -13,6 +13,10 @@ mount /dev/sda1 /mnt/setup
 
 Run the disk setup script
 ```
-sh /mnt/setup/puppy_setup/setup.sh
+sh /mnt/setup/puppy_setup/disk_setup.sh
 ```
+
+The GUI for the frugal install should load.
+Select the "DiskPup" option.
+
 

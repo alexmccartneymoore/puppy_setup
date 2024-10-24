@@ -2,6 +2,22 @@
 
 # This script runs from the usb puppy 
 
+# set the system clock
+ntpdate ntp.ubuntu.com
+
+# set the hardware clock
+hwclock --systohc
+
+# refresh the apt lists
+rm -vf /var/lib/apt/lists/*
+
+# update the repos
+apt update
+
+# autoremove any un-needed libraries
+apt autoremove
+
+
 # make a mount directory
 #mkdir /mnt/setup
 # mount the usb
@@ -29,6 +45,16 @@ mount /dev/mmcblk1p2 /mnt/second_p
 
 # copy the config from the mounted usb
 cp -r /mnt/setup/puppy_setup /mnt/second_p
+
+## Not necessary
+# mount the boot partition
+#mkdir /mnt/boot_drive
+#mount /dev/mmcblk1p1 /mnt/boot_drive
+
+# backup the original EFI boot files
+
+# copy the EFI boot files
+
 
 # unmount the drives -- won't work
 # umount /mnt/setup
