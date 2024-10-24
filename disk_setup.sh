@@ -3,16 +3,19 @@
 # This script runs from the usb puppy 
 
 # make a mount directory
-mkdir /mnt/setup
+#mkdir /mnt/setup
 # mount the usb
-mount /dev/sda1 /mnt/setup
+#mount /dev/sda1 /mnt/setup
 
 # partition the disk
+
+# unmount any mount points
+umount /dev/mmcblk1*
 
 # install sfdisk 
 apt install fdisk -y
 
-sfdisk /dev/mmcblk1 < /mnt/setup/disk_table.sfdisk
+sfdisk /dev/mmcblk1 < /mnt/setup/puppy_setup/disk_table.sfdisk
 
 # make the file systems
 
@@ -27,16 +30,16 @@ mount /dev/mmcblk1p2 /mnt/second_p
 # copy the config from the mounted usb
 cp -r /mnt/setup/puppy_setup /mnt/second_p
 
-# unmount the drives
-umount /mnt/setup
-umount /mnt/second_p
+# unmount the drives -- won't work
+# umount /mnt/setup
+# umount /mnt/second_p
 
 # remove the mount dir -- necessary?
 #rm -r /mnt/setup
 #rm -r /mnt/second_p
 
 # Show disk size
-fdisk -l /dev/mmcblk*
+fdisk -l /dev/mmcblk1p2
 read -p "Press enter to continue"
 
 # Show disk space on sector

@@ -1,11 +1,18 @@
 # Install to Wyse 3040
 
-### Usb frugal install to disk
-Boot the usb
-Select frugal install
-Proceed with the frugal install
-Run the install setup script
+## Using setup scripts on usb
+
+Make a mount directory
 ```
-./cd_setup.sh
+mkdir /mnt/setup
+```
+Mount the usb
+```
+mount /dev/sda1 /mnt/setup
+```
+
+Run the disk setup script
+```
+sh /mnt/setup/puppy_setup/setup.sh
 ```
 
