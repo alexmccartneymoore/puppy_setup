@@ -12,7 +12,7 @@ mount /dev/sda1 /mnt/setup
 # install sfdisk 
 apt install fdisk -y
 
-sfdisk /dev/mmcblk < /mnt/setup/disk_table.sfdisk
+sfdisk /dev/mmcblk1 < /mnt/setup/disk_table.sfdisk
 
 # mount the second partition
 mkdir /mnt/second_p
