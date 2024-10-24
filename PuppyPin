@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <pinboard>
-  <backdrop style="Stretched">/usr/share/backgrounds/Black.jpg</backdrop>               
+  <backdrop style="Stretched">/usr/share/backgrounds/background.jpg</backdrop>               
   <icon x="32" y="108" label="File">/usr/local/bin/defaultfilemanager</icon>             
   <icon x="32" y="204" label="Term">/usr/local/bin/defaultterminal</icon>               
   <icon x="32" y="300" label="Browse">/usr/local/bin/defaultbrowser</icon>              
