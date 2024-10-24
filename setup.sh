@@ -53,9 +53,11 @@ sh /usr/sbin/savesession-archive
 
 # Show disk size
 fdisk -l /dev/mmcblk*
+read -p "Press enter to continue"
 
 # Show disk space on sector
 df -h /dev/mmcblk*
+read -p "Press enter to continue"
 
 # Show peripherals
 lspci
